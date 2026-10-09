@@ -53,10 +53,10 @@ importers:
         version: 14.6.1
       '@upstash/ratelimit':
         specifier: ^2.1.0
-        version: 2.1.0(@upstash/redis@1.38.4)
+        version: 2.1.0(@upstash/redis@1.39.0)
       '@upstash/redis':
-        specifier: ^1.38.4
-        version: 1.38.4
+        specifier: ^1.39.0
+        version: 1.39.0
     devDependencies:
       '@vercel/node':
         specifier: ^13.0.1
@@ -542,6 +542,10 @@ packages:
     resolution: {integrity: sha512-CjXrNHTnvqBVqHgdBysY3vk2T8tpJHb5/RMeHJBTyVa9xgugCB0CJTx/3oO8RV2QRQP391RWpB7D6hLjm8V9uA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+
+  '@babel/runtime@7.29.10':
+    resolution: {integrity: sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==}
+    engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.29.7':
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
@@ -2052,8 +2056,8 @@ packages:
     peerDependencies:
       '@upstash/redis': ^1.38.2
 
-  '@upstash/redis@1.38.4':
-    resolution: {integrity: sha512-ZX69mKReun/yieyHYLoBg0eSiF6hjCQjd8zUKkJ5eCHehDV6P8S8oZOHxGSfkH1spfOhGZk0EGerBrfUsXow8g==}
+  '@upstash/redis@1.39.0':
+    resolution: {integrity: sha512-VwkpYTdxSfjSulQS5h16NHtg/1UEheBfvez2AeGKinAujOoGXhXCcohQRzsQ/d2g/XzbjzTVGhG8Ds8uOI0Mxg==}
 
   '@vercel/build-utils@14.1.0':
     resolution: {integrity: sha512-Bxwkv5phTRgU1QZ3NHzxjC6mLWJYqtYExkm/OS6Si2t3EhLFN+wls8U0oMmCrg2nXANkB1S+eXrbeu8hCcXV0A==}
@@ -4516,6 +4520,8 @@ snapshots:
     dependencies:
       '@babel/types': 7.29.8
 
+  '@babel/runtime@7.29.10': {}
+
   '@babel/runtime@7.29.7': {}
 
   '@babel/template@7.29.7':
@@ -5460,7 +5466,7 @@ snapshots:
   '@testing-library/dom@10.4.1':
     dependencies:
       '@babel/code-frame': 7.29.7
-      '@babel/runtime': 7.29.7
+      '@babel/runtime': 7.29.10
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       dom-accessibility-api: 0.5.16
@@ -5683,14 +5689,14 @@ snapshots:
 
   '@upstash/core-analytics@0.0.10':
     dependencies:
-      '@upstash/redis': 1.38.4
+      '@upstash/redis': 1.39.0
 
-  '@upstash/ratelimit@2.1.0(@upstash/redis@1.38.4)':
+  '@upstash/ratelimit@2.1.0(@upstash/redis@1.39.0)':
     dependencies:
       '@upstash/core-analytics': 0.0.10
-      '@upstash/redis': 1.38.4
+      '@upstash/redis': 1.39.0
 
-  '@upstash/redis@1.38.4':
+  '@upstash/redis@1.39.0':
     dependencies:
       uncrypto: 0.1.3
 
